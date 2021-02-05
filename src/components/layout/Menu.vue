@@ -23,8 +23,8 @@
         <q-icon name="school" />
       </q-item-section>
       <q-item-section>
-        <q-item-label>Home</q-item-label>
-        <q-item-label caption>Pagina inicial</q-item-label>
+        <q-item-label>About</q-item-label>
+        <q-item-label caption>Pagina About</q-item-label>
       </q-item-section>
     </q-item>
   </q-list>
