@@ -14,6 +14,7 @@
         <q-toolbar-title>
           Quasar App
         </q-toolbar-title>
+        <q-btn flat round icon="help" @click="handleHelp"/>
 
         <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
@@ -36,6 +37,8 @@
 </template>
 
 <script>
+import 'intro.js/introjs.css'
+
 import Menu from '@/components/layout/Menu.vue'
 
 export default {
@@ -48,6 +51,12 @@ export default {
   data () {
     return {
       leftDrawerOpen: false
+    }
+  },
+  methods: {
+    handleHelp () {
+      const introJS = require('intro.js')
+      introJS().start()
     }
   }
 }

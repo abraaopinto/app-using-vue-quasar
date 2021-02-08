@@ -1,10 +1,11 @@
 <template>
-  <q-list>
+  <q-list data-title = " Bem-vindo! " data-intro='Este é o menu da aplicação!'>
     <q-item-label header>Menu</q-item-label>
     <q-item
       clickable
       tag="h"
       to="/"
+      data-intro='Item menu para pagina inicial!'
     >
       <q-item-section avatar>
         <q-icon name="school" />
@@ -18,6 +19,7 @@
       clickable
       tag="a"
       to="/about"
+      data-intro='Item menu para pagina About!'
     >
       <q-item-section avatar>
         <q-icon name="school" />
