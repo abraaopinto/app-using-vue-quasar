@@ -3,8 +3,11 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './quasar'
+import useful from 'useful-simple-functions'
 
 Vue.config.productionTip = false
+
+Vue.prototype.$useful = useful
 
 new Vue({
   router,
