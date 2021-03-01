@@ -17,6 +17,20 @@
     </q-item>
     <q-item
       clickable
+      tag="h"
+      to="/forms"
+      data-intro='Item menu para pagina inicial!'
+    >
+      <q-item-section avatar>
+        <q-icon name="school" />
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Forms</q-item-label>
+        <q-item-label caption>Pagina forms</q-item-label>
+      </q-item-section>
+    </q-item>
+    <q-item
+      clickable
       tag="a"
       to="/about"
       data-intro='Item menu para pagina About!'
@@ -34,7 +48,12 @@
 
 <script>
 export default {
-  name: 'Menu'
+  name: 'Menu',
+  methods: {
+    mounted () {
+      console.log(this.$route)
+    }
+  }
 }
 </script>
 
